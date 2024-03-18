@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'burzum';
+    src: url('fonte/GregorianFLF.ttf') format('truetype');
+}
+:root{
+    --font-destaque: 'burzum';
+
+    --cor-fundo: black;
+    --cor-letra: white;
+    --cor-titulo: red;
+    --cor-musica: #A1896B;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font: normal normal 1em Arial, helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    background-image: url('imagens/igreja.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--cor-letra);
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 45px;
+    font-family: var(--font-destaque);
+    font-size: 1.7em;
+    color: var(--cor-titulo);
+}
+header p{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+header a{
+    color: var(--cor-titulo);
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.772);
+    width: 800px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px 0px;
+}
+main p{
+    margin: auto;
+    padding: 20px;
+    padding-left: 280px;
+    color: var(--cor-musica);
+}
+aside{
+    background-color: var(--cor-musica);
+    color: var(--cor-fundo);
+    width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px 0px;
+}
+aside h2{
+    font: normal bold 2.3em var(--font-destaque);
+    text-align: center;
+    margin-bottom: 7px;
+}
+aside p{
+    text-indent: 5px;
+}
+#varg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: var(--cor-fundo);
+    width: 100%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+    color: var(--cor-titulo);
+    cursor: pointer;
+}
+footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
